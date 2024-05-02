@@ -11,7 +11,10 @@ public class MainApp {
         ArrayList<Shape> arrayList = new ArrayList<>();
         arrayList.add(square);
         arrayList.add(rectangle);
-        System.out.println(square.area());
+        arrayList.forEach((x) -> {
+            System.out.println("Area: " + x.area());
+            System.out.println("Perimeter: " + x.perimeter());
+        });
     }
 }
 
