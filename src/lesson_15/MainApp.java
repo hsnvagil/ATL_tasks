@@ -24,7 +24,7 @@ public class MainApp {
         Arrays.sort(students, new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
-                return -o1.name.compareTo(o2.name);
+                return -o1.getName().compareTo(o2.getName());
             }
         });
 
@@ -33,7 +33,7 @@ public class MainApp {
 
         System.out.println("======== SORT AGE ==========");
 
-        Arrays.sort(students, (o1, o2) -> Integer.compare(o1.age, o2.age));
+        Arrays.sort(students, (o1, o2) -> Integer.compare(o1.getAge(), o2.getAge()));
 
         System.out.println(Arrays.toString(students));
     }

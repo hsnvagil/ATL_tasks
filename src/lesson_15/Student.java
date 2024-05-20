@@ -1,9 +1,9 @@
 package lesson_15;
 
 public class Student implements Comparable<Student> {
-    Long id;
-    String name;
-    Integer age;
+    private Long id;
+    private String name;
+    private Integer age;
 
     public Student(Long id, String name, Integer age) {
         this.id = id;
