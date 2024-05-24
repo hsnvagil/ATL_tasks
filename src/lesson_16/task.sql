@@ -113,4 +113,10 @@ WHERE Quantity > 10;
 
 SELECT *
 FROM Products
-WHERE Price = (SELECT MAX(Price) FROM Products)
+WHERE Price = (SELECT MAX(Price) FROM Products);
+
+
+
+select *
+from Products
+where length(Name) = (select max(length(Name)) from Products);
